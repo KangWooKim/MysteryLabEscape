@@ -5,7 +5,7 @@ import pymysql
 rds_host = "mysterylabescape.cfeku6yo6dx1.ap-northeast-2.rds.amazonaws.com"
 name = "axis_heaven"
 password = "your-password"  # 실제 비밀번호로 교체
-db_name = "mysterylabescape"
+db_name = "mygame"
 
 def lambda_handler(event, context):
     connection = pymysql.connect(host=rds_host, user=name, passwd=password, db=db_name)
